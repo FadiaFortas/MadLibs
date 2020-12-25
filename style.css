@@ -1,0 +1,48 @@
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Shadows+Into+Light&display=swap");
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+
+  background: -webkit-linear-gradient(#d00000, #ffba08);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+  font-size: 350%;
+}
+p {
+  font-family: "DM Sans", sans-serif;
+  
+}
+#box{
+  margin-top:4em;
+  padding:60px;
+  border:1px;
+  background-color:#eae2b7;
+
+}
+.random{
+  width:130px;
+  margin-right:0.5em;
+  color:Black;
+    padding:10px;
+}
+#submit{
+  width:90px;
+  background:#003049;
+  color:white;
+  font-size:100%;
+  padding:10px;
+  margin-left:4em;
+}
+#submit:hover{
+   background:white;
+  color:#003049;
+}
