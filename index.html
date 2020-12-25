@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>
+      Be Kind Mad-Libs!
+    </h1>
+    <p>
+      This is a mad libs game. Enter your choice of words (random words) below
+      to complete the story.
+    </p>
+    <div id="box">
+      <input
+        type="text"
+        class="random"
+        id="input1"
+        value=""
+        placeholder="Noun"
+      />
+      <input
+        type="text"
+        class="random"
+        id="input2"
+        value=""
+        placeholder="Noun(plural)"
+      />
+      <input
+        type="text"
+        class="random"
+        id="input3"
+        value=""
+        placeholder="Noun"
+      />
+      <input
+        type="text"
+        class="random"
+        id="input4"
+        value=""
+        placeholder="Place"
+      />
+      <input
+        type="text"
+        class="random"
+        id="input5"
+        value=""
+        placeholder="Adjective"
+      />
+      <input
+        type="text"
+        class="random"
+        id="input6"
+        value=""
+        placeholder="Noun"
+      />
+
+      <button id="submit">
+        <b>Submit</b>
+      </button>
+      <br />
+      <br />
+      <br />
+      <div id="result"></div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function() {
+      $("#submit").click(function() {
+        var Noun1 = $("#input1").val();
+        var Noun2 = $("#input2").val();
+        var Noun3 = $("#input3").val();
+        var Place = $("#input4").val();
+        var Adjective = $("#input5").val();
+        var Noun6 = $("#input6").val();
+        var phrase =
+          "Be kind to your " +
+          Noun1 +
+          "-footed " +
+          Noun2 +
+          " For a duck may be somebody`s " +
+          Noun3 +
+          " Be kind to your " +
+          Noun2 +
+          " in " +
+          Place +
+          " Where the weather is always " +
+          Adjective +
+          ".You may think that this is the " +
+          Noun6 +
+          ",Well it is.";
+        $("#result").html(phrase);
+      });
+    });
+  </script>
+</html>
